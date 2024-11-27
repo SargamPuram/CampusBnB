@@ -1,0 +1,5 @@
+settings.py
+.env
+secrets.json
+config/secrets.py
+.venv
