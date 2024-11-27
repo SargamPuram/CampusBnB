@@ -3,3 +3,4 @@ settings.py
 secrets.json
 config/secrets.py
 .venv
+node_modules
