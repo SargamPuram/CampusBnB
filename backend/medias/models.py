@@ -1,13 +1,15 @@
 from django.db import models
 from commonmodel.models import CommonModel
+from django.conf import settings
 
 
 class Photo(CommonModel):
-
-    file = models.URLField()
+    # Store the image URL directly
+    file_url = models.URLField(default='https://example.com/placeholder.jpg')
     description = models.CharField(
         max_length=140,
     )
+    uploaded_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=1)  # Add the uploaded_by field
     room = models.ForeignKey(
         "rooms.Room",
         on_delete=models.CASCADE,
@@ -24,8 +26,7 @@ class Photo(CommonModel):
     )
 
     def __str__(self):
-        return "Photo File"
-
+        return f"Photo File {self.id}"
 
 class Video(CommonModel):
 

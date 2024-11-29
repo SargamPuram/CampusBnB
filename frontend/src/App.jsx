@@ -4,9 +4,11 @@ import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import Navbar from './components/Navbar'
-import PrivateRoute from './util/PrivateRoute'
-import Catalogue from './components/Catalogue'
+
+import Catalogue from './components/PhotoGallery'
 import SignupPage from './pages/SignUpPage'
+import PhotoUpload from './pages/PhotoUpload'
+import PhotoGallery from './components/PhotoGallery'
 
 function App() {
 
@@ -17,7 +19,10 @@ function App() {
         <Route path = '/' element={<HomePage />} exact/>
         <Route path = '/login' element={<LoginPage />} />
         <Route path = '/signup' element={<SignupPage />} />
-        <Route path = '/home' element={<Catalogue />} />
+        <Route path = '/gallery' element={<PhotoGallery />} />
+
+
+        <Route path = '/photo-upload' element={<PhotoUpload />} />
       </Routes>
       </BrowserRouter>
     

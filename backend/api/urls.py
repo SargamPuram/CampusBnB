@@ -3,7 +3,7 @@ from . import views
 from rest_framework_simplejwt.views import TokenRefreshView
 from .views import MyTokenObtainPairView
 from users.views import JWTLogIn, JWTSignUp
-from medias.views import PhotoDetail, GetUploadURL
+from medias.views import PhotoDetail, GetUploadURL, ServePhoto, ServeAllPhotos, PhotoDeleteView
 from categories.views import CategoryViewSet
 from experiences.views import Perks, PerkDetail
 from rooms.views import Rooms, RoomDetail, RoomReviews, RoomPhotos, RoomBookings, RoomBookingCheck, Amenities, AmenityDetail
@@ -18,8 +18,11 @@ urlpatterns = [
     path('signup/', JWTSignUp.as_view(), name='jwt-signup'),
 
     # Routes for photo handling
-    path('photos/get-url', GetUploadURL.as_view(), name='get-upload-url'),
-    path('photos/<int:pk>', PhotoDetail.as_view(), name='photo-detail'),
+    path('photos/upload/', GetUploadURL.as_view(), name='get-upload-url'),
+    path('photos/get-photo/', ServePhoto.as_view(), name='get-photo'),
+    path('photos/<int:pk>/', PhotoDetail.as_view(), name='photo-detail'),
+    path('photos/', ServeAllPhotos.as_view(), name='photos'),
+    path('photos/delete/<int:pk>/', PhotoDeleteView.as_view(), name='delete-photo'),
 
     # Routes for category management
     path('categories/', CategoryViewSet.as_view({'get': 'list', 'post': 'create'}), name='category-list-create'),
