@@ -155,7 +155,7 @@ Take a glimpse of the key features and interface:
    ```
 ---
 
-## 👥 Contributing**  
+## **👥 Contributing**  
 
 At **CampusBnB** We welcome contributions! Please fork this repository and submit a pull request with detailed changes. Ensure all new features are covered by tests.
 
