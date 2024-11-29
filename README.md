@@ -8,6 +8,15 @@ A peer-to-peer rental marketplace designed specifically for college students! Si
 **CampusBnB** is a full-stack web application built with Django REST Framework (backend) and React (frontend), styled using Tailwind CSS. It streamlines the rental experience for college students, helping them find nearby rooms, book campus perks, and curate wishlists.  
 
 ---
+### 📸 **Screenshots**
+
+Take a glimpse of the key features and interface:
+![Screenshot_20241129_161507](https://github.com/user-attachments/assets/94b6e606-7437-4e09-8b7a-32210af9cc3c)
+![Screenshot_20241129_161533](https://github.com/user-attachments/assets/87e49bf5-732d-495e-8962-33cac926dab2)
+![Screenshot_20241129_161555](https://github.com/user-attachments/assets/a5127269-d026-4383-b845-7536a8c2abbd)
+![Screenshot_20241129_161736](https://github.com/user-attachments/assets/81803d5a-df52-48ca-ba53-df5944720e9c)
+
+---
 
 ## 📋 **Features**
 
