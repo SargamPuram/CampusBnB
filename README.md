@@ -51,7 +51,7 @@ A peer-to-peer rental marketplace designed specifically for college students! Si
 - **JWT Authentication**: Secure authentication and token management.  
 
 ### **Database:**  
-- **PostgreSQL** (or SQLite for development).  
+- **SQLite** (or PostgreSQL for development).  
 
 ### **Media Management:**  
 - AWS S3 / Local Storage.  
@@ -106,5 +106,52 @@ A peer-to-peer rental marketplace designed specifically for college students! Si
 ### **Backend Setup:**  
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/yourusername/campusbnb.git
+   git clone https://github.com/yourusername/CampusBnB.git
    cd campusbnb/backend
+   ```
+2. **Create and activate a virtual environment:**  
+   ```bash
+    python -m venv venv  
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+3. **Install dependencies:**  
+   ```bash
+   pip install -r requirements.txt  
+   ```
+4. **Apply migrations:**  
+   ```bash
+   python manage.py migrate  
+   ```
+5. **Start the server:**  
+   ```bash
+   git clone https://github.com/yourusername/CampusBnB.git
+   cd campusbnb/backend
+   ```
+6. **Clone the repository:**  
+   ```bash
+   python manage.py runserver 
+   ```
+### **Frontend Setup:**  
+1. **Navigate to the frontend directory:**  
+   ```bash
+   cd ../frontend  
+   ```
+2. **Install dependencies:**  
+   ```bash
+    npm install  
+   ```
+3. **Start the React development server:**  
+   ```bash
+   npm run dev  
+   ```
+---
+
+## 👥 Contributing**  
+
+At **CampusBnB** We welcome contributions! Please fork this repository and submit a pull request with detailed changes. Ensure all new features are covered by tests.
+
+
+
+
+
+
